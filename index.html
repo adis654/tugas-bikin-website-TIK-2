@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>My Simple Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Simple Blog</h1>
+    <nav>
+      <a href="#posts">Posts</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section id="posts">
+      <h2>Latest Posts</h2>
+      <article class="post">
+        <h3 class="post-title">Welcome to My Blog</h3>
+        <p class="post-date">2025-10-23</p>
+        <div class="post-content">
+          <p>This is your very first post. Edit <code>index.html</code> to add more posts!</p>
+        </div>
+      </article>
+      <!-- Duplicate the <article> section above for new posts -->
+    </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" required></textarea><br>
+        <button type="submit">Send</button>
+        <p id="form-status"></p>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 My Simple Blog</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
